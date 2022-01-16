@@ -13,14 +13,14 @@ const Profile = () => {
                <Col className= 'profile-parent text-center'>
                      <Col className='linkedin-icon py-3'>
                         <a href="https://www.linkedin.com/in/chess4math/" target="_blank" rel="noreferrer">
-                        <BsLinkedin size={26}/>
+                        <BsLinkedin size={26} fill={'#FFAD60'}/>
                         </a>
                      
                      </Col>
                      <Col className='profile-details-name'>
                         <span className='primary-text'>
                            {" "}
-                           Hello, I'm <span className='highlighted-text'>Ramon</span>
+                           Hello, I'm <span className='highlighted-text'><a href="https://github.com/Lorenchess" target="_blank" rel="noreferrer">Ramon</a></span>
                         </span>
 
                      </Col>

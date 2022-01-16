@@ -1,7 +1,11 @@
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
 $primary-color: #FFAD60;
 $primary-light: #f08c00;
 $white: #ffffff;
+
+$primary-color-dark: #452400;
+$bc-color: #f3bb80;
+$color-shade: #733c00;
 
 .profile-wrapper {
     position: relative;
@@ -19,7 +23,14 @@ $white: #ffffff;
   justify-content: center;
   align-items: center;
  }
+
+ .linkedin-icon {
+  transition: all .1s ease-in-out;
  
+  &:hover {
+    transform: scale(1.3); 
+  }
+}
  
 
  .profile-details-name {
@@ -41,10 +52,10 @@ $white: #ffffff;
     color: #fff;
   }
 
-  .highlighted-text {
-    color: $primary-color;
-    font-size: 25px;
-  }
+  // .highlighted-text {
+  //   color: $primary-color;
+  //   font-size: 25px;
+  // }
   .profile-role-tagline {
     font-size: 19px;
     margin: 10px 0;
@@ -67,6 +78,45 @@ $white: #ffffff;
     color: black !important;
    }
 
+  }
+
+  .highlighted-text {
+    position: relative;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 900;
+    //text-decoration: none;
+    //color: $primary-color!important;
+
+    & a {
+      text-decoration: none;
+      color: $primary-color;
+    }
+
+    & a:hover {
+      color: $primary-color;
+    }
+    
+    & a::after {
+      content: "";
+      border-bottom: 0.1em solid $primary-color;
+      border-radius: 0.5rem;
+      position: absolute;
+      bottom: 0.14em;
+      top: 0;
+      left: 0;
+      right: 100%;
+      z-index: 10;
+      transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+    }
+    & a:hover::after {
+      right: 0;
+    }
+
+    // & a:visited {
+    //   color: #9e4e03;
+    // }
+    
   }
 
 

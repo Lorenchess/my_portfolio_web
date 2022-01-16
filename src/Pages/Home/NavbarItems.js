@@ -1,13 +1,18 @@
 import React from 'react'
+import { SiLichess } from "react-icons/si";
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import './NavbarItems.scss';
 
 const NavbarItems = () => {
    return (
       <Navbar sticky="top"  collapseOnSelect expand="lg" className="navbar-wrapper" >
-         <Container>
-            <Navbar.Brand href="#home">Lorenchess</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+         <Container className="nav-container">
+            <Navbar.Brand href="#home">
+              Lorenchess
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav">
+              <SiLichess size={30} fill={'#000'}/>
+            </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                <Nav className="ms-auto">
                   <Nav.Link href="#features" className='px-4'>Home</Nav.Link>
