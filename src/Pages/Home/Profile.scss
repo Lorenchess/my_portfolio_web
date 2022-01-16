@@ -1,0 +1,180 @@
+@import "~bootstrap/scss/bootstrap";
+$primary-color: #FFAD60;
+$primary-light: #f08c00;
+$white: #ffffff;
+
+.profile-wrapper {
+    position: relative;
+ }
+
+ .profile-parent {
+  display: flex;
+  position: absolute;
+  top:45vh;
+  bottom: 0;
+  left:0;
+  right: 0;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ 
+
+ .profile-details-name {
+    font-size: 24px;
+    //font-family: "Poppins SemiBold";
+  }
+
+  .profile-details-role {
+    margin: 14px 0 24px 0;
+    
+  }
+
+  .primary-text h1 {
+    font-size: 35px;
+    padding: 20px !important;
+  }
+
+  .primary-text {
+    color: #fff;
+  }
+
+  .highlighted-text {
+    color: $primary-color;
+    font-size: 25px;
+  }
+  .profile-role-tagline {
+    font-size: 19px;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+  
+  }
+
+  .perfil-btn {
+    border: 2px solid $primary-color !important;
+    border-radius: 10px !important;
+   background-color: transparent !important;
+   color: $primary-color !important;
+   padding: 8px 12px !important;
+   font-size: 16px !important;
+   font-weight: 600 !important;
+   cursor: pointer;
+
+   &:hover {
+    background-color: $primary-color !important;
+    color: black !important;
+   }
+
+  }
+
+
+
+  // .linkedin-btn:hover {
+  //   transform: scale(1.07);
+  //   transition: 1s ease-out;
+  // }
+
+
+//  .profile-options .highlighted-btn {
+//    margin: 0 0 0 28px;
+//    border-radius: 12px solid white;
+//  }
+//  .profile-options .highlighted-btn:hover {
+//    margin: 0 0 0 28px;
+//    background-color: cornsilk;
+//    color: #111;
+//  }
+//  .profile-picture {
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    box-shadow: 0 1px 0px 0px var(--white);
+//    border-radius: 50%;
+//    height: 380px;
+//    width: 380px;
+//    margin: 0 0px 0 100px;
+//  }
+//  .profile-picture-background {
+//    height: 92%;
+//    width: 92%;
+//    border-radius: 50%;
+//    //background-image: url("../../../assets/Home//profilephoto.jpg");
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//    background-position: center;
+//  }
+//  .profile-picture-background:hover {
+//    transform: scale(1.07);
+//    transition: 1s ease-out;
+//  }
+ 
+//  .colz .colz-icon i {
+//    color: white;
+//    padding: 8px;
+//    padding-left: 0px;
+//  }
+//  .colz .cols-icon i:hover {
+//    transform: scale(1.5);
+//  }
+ 
+//  /*IPAD PRO RESPONSIVENESS*/
+//  @media only screen and (max-width: 1110px) {
+//    .profile-picture {
+//      margin: 0 0px 0 80px;
+//    }
+//    .profile-details-name {
+//      font-size: 20px;
+//    }
+//    .profile-details-role .primary-text {
+//      font: 12px;
+//    }
+//    .profile-options .btn {
+//      width: 120px;
+//      padding: 11px 0;
+//      z-index: 700;
+//    }
+//  }
+//  @media only screen and (max-width: 910px) {
+//    .profile-picture {
+//      margin: 0 0 0 4px;
+//      height: 320px;
+//      width: 320px;
+//    }
+//  }
+//  @media only screen and (max-width: 810px) {
+//    .profile-picture {
+//      margin: 0 !important;
+//    }
+//    .profile-parent {
+//      flex-direction: column-reverse;
+//      margin: 40px 0 0 0;
+//    }
+//    .profile-options {
+//      display: flex;
+//      justify-content: space-between;
+//    }
+//    .proflie-details {
+//      margin: 25px 0 0;
+//    }
+//    .profile-options .highlighted-btn {
+//      margin: 0 !important;
+//    }
+//    .profile-details-name,
+//    .profile-details-role {
+//      text-align: center;
+//    }
+//  }
+ 
+//  @media only screen and (max-width: 375px) {
+//    .profile-picture {
+//      height: 275px;
+//      width: 275px;
+//      margin-top: -90px;
+//    }
+//    .proflie-details {
+//      width: 95%;
+//    }
+//  }
+ 

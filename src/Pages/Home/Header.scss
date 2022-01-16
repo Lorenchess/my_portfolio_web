@@ -1,0 +1,21 @@
+/*************** HEADER ************/
+
+.header-wrapper {
+   position: relative;
+   background: url(../../Assets/header-background.jpg);
+   //opacity: 0.50;
+   background-size: cover;
+   background-position: center;
+   height: 90vh;
+   //width: 100vw;
+}
+
+.header-wrapper::before {
+   content: "";
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   background-color: rgba(0,0,0,0.70); 
+}

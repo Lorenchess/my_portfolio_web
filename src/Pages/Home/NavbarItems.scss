@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primary-color: #FFAD60;
+$primary-light: #f08c00;
+$white: #ffffff;
+
+.navbar-wrapper {
+   font-size: 1.6rem;
+   cursor: pointer;
+   font-weight: bold;
+   background-color: $primary-color;
+}
+
+// .navbar-wrapper::before {
+//    content: "";
+//    position: absolute;
+//    top: 0px;
+//    right: 0px;
+//    bottom: 0px;
+//    left: 0px;
+//    background-color: rgba(0,0,0,0.50); 
+// }
+
+.navbar-nav .nav-link {
+   color: #000 !important;
+   
+}
+
+.navbar-brand {
+   font-family:'Lobster'!important;
+   font-weight: 400;
+   font-size: 3.5rem;
+   padding: 0;
+   margin: 0;
+}
