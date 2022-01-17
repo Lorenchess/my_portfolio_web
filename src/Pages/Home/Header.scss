@@ -3,11 +3,15 @@
 .header-wrapper {
    position: relative;
    background: url(../../Assets/header-background.jpg);
-   //opacity: 0.50;
    background-size: cover;
    background-position: center;
    height: 90vh;
-   //width: 100vw;
+//    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+//       //-webkit-clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 85% 59%, 100% 51%, 100% 100%, 0% 100%);
+//       clip-path: polygon(0 8%, 7% 6%, 14% 5%, 21% 5%, 28% 6%, 34% 8%, 40% 12%, 46% 17%, 50% 20%, 54% 23%, 60% 25%, 66% 26%, 70% 26%, 77% 25%, 83% 23%, 89% 21%, 95% 19%, 100% 17%, 100% 100%, 0% 100%);
+      
+//   }
+  
 }
 
 .header-wrapper::before {
@@ -18,4 +22,5 @@
    bottom: 0px;
    left: 0px;
    background-color: rgba(0,0,0,0.70); 
+
 }

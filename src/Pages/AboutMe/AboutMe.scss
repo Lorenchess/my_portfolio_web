@@ -1,0 +1,63 @@
+$primary-color: #FFAD60;
+$primary-dark: #f08c00;
+$white: #ffffff;
+
+$primary-color-dark: #452400;
+$bc-color: #f3bb80;
+$color-shade: #733c00;
+
+
+.author-img-wrapper{
+  width: 20rem !important;
+  border-radius: 50%;
+  padding:.3rem;
+  border: 2px solid $primary-color-dark;
+  text-align: center;
+}
+
+.about-heading {
+   font-size: 35px;
+   color: $primary-color-dark;
+   text-align: center;
+   font-weight:600;
+   text-shadow: 1px 1px 2px $primary-color;
+}
+
+.about-text {
+   font-size: 2rem;
+   margin-top: 2rem;
+   //color: $primary-color-dark; find the color for the text 
+}
+
+strong {
+   color: $primary-color-dark;
+}
+
+.card-header {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+// .heading-seperator div{
+//    display: flex !important;
+//    align-items: center;
+//    position: relative;
+//    width: 180px;
+//    margin: 10px 0 0;
+// }
+
+// .seperator-line {
+//    width: 100%;
+//    height: 2px!important;
+//    background-color: #1f221f !important;
+//    & div {
+//       display: block;
+//    }
+// }
+
+// .seperator-blob {
+//    height: 10px;
+//    width: 100%;
+//    position: absolute;
+//    display: flex;
+//    justify-content: center;
+// }

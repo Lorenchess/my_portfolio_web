@@ -17,7 +17,7 @@ const Profile = () => {
                         </a>
                      
                      </Col>
-                     <Col className='profile-details-name'>
+                     <Col className='profile-details-name my-3'>
                         <span className='primary-text'>
                            {" "}
                            Hello, I'm <span className='highlighted-text'><a href="https://github.com/Lorenchess" target="_blank" rel="noreferrer">Ramon</a></span>
@@ -53,8 +53,8 @@ const Profile = () => {
                         </span>
                      </Col>
                    
-                     <Col className="profile-optins">
-                        <Button className="perfil-btn" size="lg"> {" "}
+                     <Col className="profile-optins my-3">
+                        <Button className="perfil-btn mx-3 " size="lg" > {" "}
                            Get in touch 
                         </Button>{" "} 
                         

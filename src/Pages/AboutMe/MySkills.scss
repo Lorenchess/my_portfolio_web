@@ -1,0 +1,32 @@
+$color-primary-light: #FFAD60;
+$color-secondary-dark: #ff7730;
+
+.container-wrapper h2 {
+	text-shadow: 1px 1px 2px $color-primary-light;
+}
+
+.skill-bar {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 3rem;
+	width: 300px;
+   font-size: 1.5rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.skill-done {
+	background: linear-gradient(to right, $color-primary-light, $color-secondary-dark);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
