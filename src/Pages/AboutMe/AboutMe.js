@@ -1,8 +1,9 @@
 import React from "react"
-import {Container, Row, Col, Card, Button} from "react-bootstrap";
+import {Container, Row, Col, Card} from "react-bootstrap";
 import MySkills from './MySkills';
 import author from "../../Assets/Ramon Lorente.jpg";
 import "./AboutMe.scss";
+import LineSeparator from "../../Shared/LineSeparator";
 
 const AboutMe = () => {
    return (
@@ -17,7 +18,7 @@ const AboutMe = () => {
           <Row >
           <Col lg="2" xs="12"></Col>
             <Col lg= "8" xs="12">
-              <Card.Header>
+              <Card className="about-card">
                 <Card.Img variant="top"  src={author} className="author-img-wrapper mx-auto d-block mt-5"/>
                 <Card.Body className="mb-3 mx-3 text-break">
                     <Card.Text className="about-text">
@@ -38,13 +39,13 @@ const AboutMe = () => {
                       desire to learn, and I am <strong>determined to work hard to become a successful software engineer</strong>.
                     </Card.Text>
                 </Card.Body>
-              </Card.Header>
+              </Card>
             </Col>
             <Col lg="2" xs="12"></Col>
           </Row >
-
+          <LineSeparator />
           <MySkills />
-          
+          <LineSeparator />
         </Container>
 
       </>

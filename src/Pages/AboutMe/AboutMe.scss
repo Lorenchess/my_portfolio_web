@@ -24,7 +24,7 @@ $color-shade: #733c00;
 }
 
 .about-text {
-   font-size: 2rem;
+   font-size: 1.8rem;
    margin-top: 2rem;
    //color: $primary-color-dark; find the color for the text 
 }
@@ -33,9 +33,11 @@ strong {
    color: $primary-color-dark;
 }
 
-.card-header {
+.about-card {
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
+
+
 
 // .heading-seperator div{
 //    display: flex !important;

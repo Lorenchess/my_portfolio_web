@@ -1,0 +1,30 @@
+$primary-color-dark: #452400;
+
+.lines{
+   position: relative;
+   width: 10rem !important;
+   height: 45px;  
+   margin: 5rem 0;
+}
+
+.lines {
+   &::after {
+      left: -2rem;
+   }
+   &::before {
+      right: -2rem;
+   }
+}
+.lines::before, .lines::after{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: $primary-color-dark;
+  width: 45%;
+  top: 45%;
+}
+
+.icon-separator {
+   fill: $primary-color-dark !important;
+}
