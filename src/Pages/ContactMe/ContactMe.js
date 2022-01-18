@@ -1,59 +1,68 @@
 import React from 'react'
+import {Container, Row, Col, Button } from 'react-bootstrap';
+import './ContactMe.scss'
 
 const ContactMe = () => {
    return (
       <>
-       <div id="footer-wrapper">
-					<div id="footer" class="container">
-						<header class="major">
-							<h2>Euismod aliquam vehicula lorem</h2>
-							<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit<br />
-							dolor neque semper magna lorem ipsum feugiat veroeros lorem ipsum dolore.</p>
-						</header>
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<form method="post" action="#">
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobile">
-											<input name="name" placeholder="Name" type="text" />
-										</div>
-										<div class="col-6 col-12-mobile">
-											<input name="email" placeholder="Email" type="text" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" placeholder="Message"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" /></li>
-												<li><input type="reset" value="Clear form" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="row gtr-0">
-									<ul class="divided icons col-6 col-12-mobile">
-										<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
-										<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
-										<li class="icon brands fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
-									</ul>
-									<ul class="divided icons col-6 col-12-mobile">
-										<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
-										<li class="icon brands fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
-										<li class="icon brands fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
-									</ul>
-								</div>
-							</section>
-						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="menu">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</div>
+       <Container className='contact-wrapper mx-auto'>
+          <Row>
+            <Col className='contact-info text-center'>
+               <Row>
+                  <Col>
+                  <h1><strong>I am always happy to hear from you</strong></h1>
+                  </Col> 
+               </Row>
+               <Row>
+                  <Col>
+                     <ul>
+                        <li>Pembroke Pines, Florida</li>
+                        <li>(956) 336-2323</li>
+                        <li>ramon_lorente@yaho.com</li>
+                     </ul>
+                  </Col> 
+               </Row> 
+            </Col>
+             
+            <Col className='contact-form'>
+               <h3>Email Us</h3>
+               <form>
+               <Row>
+                     <Col>
+                        <p>
+                           <label>Name</label> 
+                           <input type="text" name="name" />
+                        </p>
+                        <p>
+                           <label>Company</label> 
+                           <input type="text" name="company" />
+                        </p>
+                     </Col>
+                 
+                     <Col>
+                     <p>
+                        <label>Email Address</label> 
+                        <input type="email" name="email" />
+                     </p>
+                     <p>
+                        <label>Phone Number</label> 
+                        <input type="text" name="phone" />
+                     </p>
+                     </Col>
+               </Row>
+               <Row>
+                  <Col>
+                     <p>
+                        <label>Message</label> 
+                        <textarea name="message" rows="5" className="text-area"></textarea>
+                     </p>
+                  </Col>
+               </Row>
+                 <Button className="btn-form">Submit</Button>
+               </form>
+             </Col>
+          </Row>
+       </Container>
       </>
    )
 }

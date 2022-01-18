@@ -1,0 +1,46 @@
+$primary-color: #FFAD60;
+$primary-light: #f08c00;
+
+
+.contact-wrapper {
+   background:$primary-light;
+   box-shadow: 0 0 2rem 0 rgba(72, 94, 106, 0.7);
+   margin-bottom: 5rem;
+
+   & > * {
+      padding: 1.5rem;
+   }
+}
+
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+.contact-info {
+   background: $primary-color;   
+}
+
+.contact-form {
+   background: #f9feff;
+   text-align: center;
+   
+
+    & form {
+      & p {
+         font-size: 1.3rem;
+         margin: 10px;
+      }
+
+      & label {
+         display: block;
+      }
+
+      & .text-area {
+         width: 80%; //put 100% for small vports 
+      }
+    }
+  
+
+}
