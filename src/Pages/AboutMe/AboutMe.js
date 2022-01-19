@@ -44,7 +44,7 @@ const AboutMe = () => {
             <Col lg="2" xs="12"></Col>
           </Row >
           <LineSeparator />
-          <MySkills />
+          <MySkills /> 
           <LineSeparator />
         </Container>
 

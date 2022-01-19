@@ -1,18 +1,18 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 import './MySkills.scss';
 
 const SkillBar = ({done}) => {
 	const [style, setStyle] = useState({});
 	
-	setTimeout(() => {
+	 useEffect(() => {
 		const newStyle = {
 			opacity: 1,
 			width: `${done}%`
 		}
 		
 		setStyle(newStyle);
-	}, 200);
+	 }, [done]);
 	
 	return (
 		<div className="skill-bar mx-auto">

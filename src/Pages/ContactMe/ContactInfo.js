@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import {FaStreetView, FaPhoneAlt, FaEnvelope} from 'react-icons/fa'
 import './ContactMe.scss'
 
+
 const ContactInfo = () => {
   return (
   <Container>
@@ -21,6 +22,7 @@ const ContactInfo = () => {
                   <FaEnvelope size={15}/>    <li>ramon_lorente@yaho.com</li>
                   </ul>
                </Col> 
+           
             </Row> 
          </Col>
      </Row>

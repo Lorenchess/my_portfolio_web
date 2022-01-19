@@ -5,10 +5,12 @@ import isaGrooming from '../../Assets/isaGrooming-img.jpg';
 import beautifulChess from '../../Assets/dubrovnik-burnt-boxwood.jpg';
 import businessCard from '../../Assets/business-card.jpg';
 import LineSeparator from '../../Shared/LineSeparator';
+// import MySkills from '../AboutMe/MySkills';
 
 const MyProjects = () => {
    return (
       <>
+       {/* <MySkills /> */}
        <Container className="myProjects-wrapper mt-5 py-3">
           <Row >
             <Col xs="12 mb-5" className="separator-wrapper">        
