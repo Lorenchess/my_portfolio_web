@@ -9,38 +9,81 @@ $primary-light: #f08c00;
 
    & > * {
       padding: 1.5rem;
+      //margin: 1rem;
    }
-}
+
+   & h1 {
+      margin-bottom: 1.5rem;
+   }
 
 
-ul {
-   list-style: none;
-   padding: 0;
-}
+   & contact-main-row {
+     margin: 1rem;
+   }
 
-.contact-info {
-   background: $primary-color;   
-}
+   ul {
+      list-style: none;
+      padding: 0;
 
-.contact-form {
-   background: #f9feff;
-   text-align: center;
+      & li {
+         font-size: 1.5rem;
+         margin: 1rem 0;
+      }
+   }
+
+   .contact-info {
+      background: $primary-color;   
+   }
+
+   .contact-form {
+      background: #f9feff;
+      text-align: center;
    
 
+   & h3 {
+      font-size: 2.5rem;
+      font-weight: 600;
+   }
+
     & form {
-      & p {
+      
          font-size: 1.3rem;
          margin: 10px;
+         border: 1px solid #f9feff;
+
+         & label {
+            display: block;
+         }
+
+         & .text-area {
+         width: 100%; //put 100% for small vports 
+         }
+
+         & input {
+            margin: 10px 0;
+         }
+
+      & .btn-form {
+         font-size: 1.5rem;
+         font-weight: 600;
+         color: #000;
+         text-transform: uppercase;
+         background:  #FFAD60;
+         width: 50%;
+         border: 0;
+         &:hover {
+            background-color: #f08c00;
+            transform: scale(.95);
+            outline: 0;
+            transition: all .7s ease-in-out;
+         }
       }
 
-      & label {
-         display: block;
-      }
-
-      & .text-area {
-         width: 80%; //put 100% for small vports 
+      & input {
+         width: 100%;
       }
     }
-  
+
+ }
 
 }

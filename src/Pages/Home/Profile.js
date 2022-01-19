@@ -29,8 +29,9 @@ const Profile = () => {
                            {" "}
                            <h1>
                            {" "}
-                           <Typical 
+                           <Typical
                               loop= {Infinity}
+                              wrapper="b"
                               steps= {[
                                  "Enthusiastic Dev 😀",
                                  1000,
@@ -44,6 +45,9 @@ const Profile = () => {
                                  1000,
                                  "FIDE Chess Master 🏆",
                                  1000,
+                                 "husband & father 👪",
+                                 1000
+                                 
                               ]}
                            />
                            </h1>

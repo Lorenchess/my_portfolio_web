@@ -1,70 +1,81 @@
-import React from 'react'
-import {Container, Row, Col, Button } from 'react-bootstrap';
-import './ContactMe.scss'
+import React, { useState } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import ContactInfo from "./ContactInfo";
+import "./ContactMe.scss";
 
 const ContactMe = () => {
-   return (
-      <>
-       <Container className='contact-wrapper mx-auto'>
-          <Row>
-            <Col className='contact-info text-center'>
-               <Row>
-                  <Col>
-                  <h1><strong>I am always happy to hear from you</strong></h1>
-                  </Col> 
-               </Row>
-               <Row>
-                  <Col>
-                     <ul>
-                        <li>Pembroke Pines, Florida</li>
-                        <li>(956) 336-2323</li>
-                        <li>ramon_lorente@yaho.com</li>
-                     </ul>
-                  </Col> 
-               </Row> 
-            </Col>
-             
-            <Col className='contact-form'>
-               <h3>Email Us</h3>
-               <form>
-               <Row>
-                     <Col>
-                        <p>
-                           <label>Name</label> 
-                           <input type="text" name="name" />
-                        </p>
-                        <p>
-                           <label>Company</label> 
-                           <input type="text" name="company" />
-                        </p>
-                     </Col>
-                 
-                     <Col>
-                     <p>
-                        <label>Email Address</label> 
-                        <input type="email" name="email" />
-                     </p>
-                     <p>
-                        <label>Phone Number</label> 
-                        <input type="text" name="phone" />
-                     </p>
-                     </Col>
-               </Row>
-               <Row>
-                  <Col>
-                     <p>
-                        <label>Message</label> 
-                        <textarea name="message" rows="5" className="text-area"></textarea>
-                     </p>
-                  </Col>
-               </Row>
-                 <Button className="btn-form">Submit</Button>
-               </form>
-             </Col>
-          </Row>
-       </Container>
-      </>
-   )
-}
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
 
-export default ContactMe
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fullName, email);
+    
+  };
+
+  return (
+    <>
+      <Container className="contact-wrapper mx-auto">
+        <Row className="contact-main-row">
+          <Col xm="12" lg="6" className="contact-info text-center py-3">
+            <ContactInfo />
+          </Col>
+
+          <Col xm="12" lg="6" className="contact-form py-3">
+            <h3>Say hello...</h3>
+            <form className="form" onSubmit={handleSubmit}>
+              <Row>
+                <Col xm="12" lg="6">
+                  <label htmlFor="fullName">Name</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    required
+                  />
+
+                  <label htmlFor="company">Company</label>
+                  <input type="text" name="company" id="company" />
+                </Col>
+
+                <Col xm="12" lg="6">
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+
+                  <label htmlFor="phone">Phone Number</label>
+                  <input type="text" name="phone" id="phone" />
+                </Col>
+              </Row>
+              <Row>
+                <Col xm="12">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    className="text-area"
+                    id="message"
+                    required
+                  ></textarea>
+                </Col>
+              </Row>
+              <Button type="submit" className="btn-form">
+                Submit
+              </Button>
+            </form>
+          </Col>
+        </Row>
+      </Container>
+    </>
+  );
+};
+
+export default ContactMe;

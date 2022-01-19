@@ -1,6 +1,6 @@
 import React from 'react'
 import Profile from './Profile';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import './Header.scss';
 import Particles from "react-tsparticles";
 
