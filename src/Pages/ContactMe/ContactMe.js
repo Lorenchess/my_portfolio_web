@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ContactInfo from "./ContactInfo";
 import { dataBase } from "./FireBase";
+//import sendReplayEmail from '../../emails/sendEmail';
 import "./ContactMe.scss";
 
 const ContactMe = () => {
@@ -34,12 +35,17 @@ const ContactMe = () => {
         setIsLoading(false);
       });
 
+      // Email reply
+      // sendReplayEmail(email, fullName);
+
     setFullName("");
     setEmail("");
     setMessage("");
     setCompany("");
     setPhone("");
   };
+
+
 
   return (
     <>
@@ -117,6 +123,7 @@ const ContactMe = () => {
                 Submit
               </Button>
             </form>
+         
           </Col>
         </Row>
       </Container>
