@@ -1,16 +1,44 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ContactInfo from "./ContactInfo";
+import { dataBase } from "./FireBase";
 import "./ContactMe.scss";
 
 const ContactMe = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
+  const [phone, setPhone] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(fullName, email);
-    
+    setIsLoading(true);
+
+    dataBase
+      .collection("contacts")
+      .add({
+        fullName: fullName,
+        email: email,
+        message: message,
+        company: company,
+        phone: phone,
+      })
+      .then(() => {
+        alert("Your message has been sent!");
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        alert(error.message);
+        setIsLoading(false);
+      });
+
+    setFullName("");
+    setEmail("");
+    setMessage("");
+    setCompany("");
+    setPhone("");
   };
 
   return (
@@ -37,7 +65,13 @@ const ContactMe = () => {
                   />
 
                   <label htmlFor="company">Company</label>
-                  <input type="text" name="company" id="company" />
+                  <input
+                    type="text"
+                    name="company"
+                    id="company"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                  />
                 </Col>
 
                 <Col xm="12" lg="6">
@@ -52,7 +86,13 @@ const ContactMe = () => {
                   />
 
                   <label htmlFor="phone">Phone Number</label>
-                  <input type="text" name="phone" id="phone" />
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
                 </Col>
               </Row>
               <Row>
@@ -63,18 +103,23 @@ const ContactMe = () => {
                     rows="5"
                     className="text-area"
                     id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     required
                   ></textarea>
                 </Col>
               </Row>
-              <Button type="submit" className="btn-form">
+              <Button
+                type="submit"
+                className="btn-form"
+                style={{ background: isLoading ? "#ccc" : "#f9feff" }}
+              >
                 Submit
               </Button>
             </form>
           </Col>
         </Row>
       </Container>
-      
     </>
   );
 };
