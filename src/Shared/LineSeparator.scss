@@ -1,4 +1,5 @@
-$primary-color-dark: #452400;
+@import "./Color-Variables/color-variables" ;
+
 
 .lines{
    position: relative;
@@ -20,11 +21,11 @@ $primary-color-dark: #452400;
   position: absolute;
   margin: auto;
   height: 2px;
-  background: $primary-color-dark;
+  background: $primary-darker;
   width: 45%;
   top: 45%;
 }
 
 .icon-separator {
-   fill: $primary-color-dark !important;
+   fill: $primary-darker !important;
 }

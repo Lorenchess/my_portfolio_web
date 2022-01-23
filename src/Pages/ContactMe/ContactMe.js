@@ -1,6 +1,7 @@
 import React, { useState, useRef} from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ContactInfo from "./ContactInfo";
+import LineSeparator from "../../Shared/LineSeparator";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
@@ -185,7 +186,7 @@ const ContactMe = () => {
                 type="submit"
                 className="btn-form"
                 disabled = {isDisabled}
-                style={{ background: isSending ? "#FFAD60" : "#f9feff" }}
+                style={{ background: isSending ? "#32d1c9" : "#adede9" }}
               >
                 {isSending === "Submit" ? "Submit" : "Sent"}
               </Button>
@@ -193,6 +194,7 @@ const ContactMe = () => {
           </Col>
         </Row>
       </Container>
+      <LineSeparator/>
     </>
   );
 };

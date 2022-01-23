@@ -3,7 +3,7 @@
 
 
 .contact-wrapper {
-   background: $color-darker;
+   background: $primary-darker;
    box-shadow: 0 0 2rem 0 rgba(72, 94, 106, 0.7);
    margin-bottom: 5rem;
 
@@ -32,7 +32,7 @@
    }
 
    .contact-info {
-      background: $primary-color;   
+      background: $primary-light;   
    }
 
    .contact-form {
@@ -43,6 +43,11 @@
          font-weight: 900;
          color: $primary-success;
        }
+
+   & label {
+      font-size: 1.5rem;
+      font-weight: 500;
+   }    
    
 
    & h3 {
@@ -58,6 +63,7 @@
 
          & label {
             display: block;
+            // color: color-text !important
          }
 
          & .text-area {
@@ -73,11 +79,11 @@
          font-weight: 600;
          color: #000;
          text-transform: uppercase;
-         background:  #FFAD60;
+         background: #269d97;
          width: 50%;
          border: 0;
          &:hover {
-            background-color: #f08c00;
+            background-color: #269d97;
             transform: scale(.95);
             outline: 0;
             transition: all .7s ease-in-out;
@@ -99,3 +105,4 @@
  }
 
 }
+

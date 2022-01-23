@@ -3,7 +3,7 @@
 
 .projects-heading {
    font-size: 35px;
-   color: $color-darker;
+   color: $color-text;
    text-align: center;
    font-weight:600;
    text-shadow: 1px 1px 2px $primary-color;
@@ -22,7 +22,7 @@
 }
 
 .img-wrapper {
-  border: 2px solid $color-darker;
+  border: 2px solid $color-text;
 }
 
 .project-card-title {
@@ -34,15 +34,15 @@
 }
 
 .project-btn {
-   background-color: #f08c00;
+   background-color: $primary-color;
    color: #000;
    font-weight: 600;
-   border: 1.5px solid $color-darker;
+   border: 1.5px solid $color-text;
 
    &:hover {
-      background-color: #f3bb80;
+      background-color: $primary-light;
       color: #000;
       font-weight: 600;
-      border: 1.5px solid $color-darker;
+      border: 1.5px solid $primary-darker;
    }
 }

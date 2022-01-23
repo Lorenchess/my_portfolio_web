@@ -3,7 +3,7 @@ import {Card, Container, Col, Row, Button} from 'react-bootstrap';
 import './MyProjects.scss';
 import isaGrooming from '../../Assets/isaGrooming-img.jpg';
 import beautifulChess from '../../Assets/dubrovnik-burnt-boxwood.jpg';
-import businessCard from '../../Assets/business-card.jpg';
+import businessCard from '../../Assets/ledo.jpg';
 import LineSeparator from '../../Shared/LineSeparator';
 // import MySkills from '../AboutMe/MySkills';
 
@@ -27,7 +27,7 @@ const MyProjects = () => {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                      </Card.Text>
-                     <Button className='project-btn'>See more...</Button>
+                     <Button className='project-btn'>Case Study</Button>
                   </Card.Body>
                </Card>
              </Col>
@@ -40,7 +40,7 @@ const MyProjects = () => {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                      </Card.Text>
-                     <Button className='project-btn'>See more...</Button>
+                     <Button className='project-btn'>Case Study</Button>
                   </Card.Body>
                </Card>
              </Col>
@@ -53,7 +53,7 @@ const MyProjects = () => {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                      </Card.Text>
-                     <Button className='project-btn'>See more...</Button>
+                     <Button className='project-btn'>Case Study</Button>
                   </Card.Body>
                </Card>
              </Col>
