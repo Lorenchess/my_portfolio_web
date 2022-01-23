@@ -1,0 +1,23 @@
+@import "../../Shared/Color-Variables/color-variables" ;
+
+.footer-wrapper {
+   background-color: $primary-color;
+   font-size: 1.4rem;
+
+   // & .footer__navigation ul li {
+   //    display: flex;
+   //    flex-direction: column;
+   // }
+}
+
+// .footer__navigation {
+//    display: flex !important;
+//    flex-direction: row !important;
+// }
+
+.footer__list {
+   display: flex;
+   flex-direction: row;
+   //color: red;
+   
+}

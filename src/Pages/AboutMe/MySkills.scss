@@ -1,8 +1,9 @@
-$color-primary-light: #FFAD60;
-$color-secondary-dark: #ff7730;
+@import "../../Shared/Color-Variables/color-variables" ;
+
+
 
 .container-wrapper h2 {
-	text-shadow: 1px 1px 2px $color-primary-light;
+	text-shadow: 1px 1px 2px $primary-color;
 }
 
 .skill-bar {
@@ -18,7 +19,7 @@ $color-secondary-dark: #ff7730;
 }
 
 .skill-done {
-	background: linear-gradient(to right, $color-primary-light, $color-secondary-dark);
+	background: linear-gradient(to right, $primary-color, $color-secondary);
 	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
 	border-radius: 20px;
 	color: #fff;

@@ -1,23 +1,17 @@
-$primary-color: #FFAD60;
-$primary-dark: #f08c00;
-$white: #ffffff;
-
-$primary-color-dark: #452400;
-$bc-color: #f3bb80;
-$color-shade: #733c00;
+@import "../../Shared/Color-Variables/color-variables" ;
 
 
 .author-img-wrapper{
   width: 20rem !important;
   border-radius: 50%;
   padding:.3rem;
-  border: 2px solid $primary-color-dark;
+  border: 2px solid $color-darker;
   text-align: center;
 }
 
 .about-heading {
    font-size: 35px;
-   color: $primary-color-dark;
+   color: $color-darker;
    text-align: center;
    font-weight:600;
    text-shadow: 1px 1px 2px $primary-color;
@@ -30,7 +24,7 @@ $color-shade: #733c00;
 }
 
 strong {
-   color: $primary-color-dark;
+   color: $color-darker;
 }
 
 .about-card {
