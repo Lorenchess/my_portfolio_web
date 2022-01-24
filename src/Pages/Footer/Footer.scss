@@ -3,21 +3,19 @@
 .footer-wrapper {
    background-color: $primary-color;
    font-size: 1.4rem;
+   margin: 3rem 0 0 0;
+   padding: 3rem ;
 
-   // & .footer__navigation ul li {
-   //    display: flex;
-   //    flex-direction: column;
-   // }
+  & .footer__social{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      
+      
+   }
 }
 
-// .footer__navigation {
-//    display: flex !important;
-//    flex-direction: row !important;
-// }
 
-.footer__list {
-   display: flex;
-   flex-direction: row;
-   //color: red;
-   
-}
+

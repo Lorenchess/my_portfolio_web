@@ -1,5 +1,9 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import { BsLinkedin } from "react-icons/bs";
+import { ImFacebook2 } from "react-icons/im";
+import { BsGithub } from "react-icons/bs";
+// import { BsLinkedin } from "react-icons/bs";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -10,22 +14,24 @@ const Footer = () => {
                
                </Col> 
             </Row>
-            <Row className="row">
-                <Col xm="12" >
-                    <div className="footer__navigation">
-                        <ul className="footer__list text-center justify-content-center">
-                            <li className="footer__item"><a href="#" className="footer__link">Home</a></li>
-                            <li className="footer__item"><a href="#" className="footer__link">About</a></li>
-                            <li className="footer__item"><a href="#" className="footer__link">Projects</a></li>
-                            <li className="footer__item"><a href="#" className="footer__link">Contact</a></li>
-                        </ul>
-                    </div>
+            <Row className="row footer_social">
+                <Col xm="12" className="text-center py-2">
+                    <a href="https://www.linkedin.com/in/chess4math/" target="_blank" rel="noreferrer" className='px-4' >
+                      <BsLinkedin size={26} fill={'#131131'} />
+                    </a>
+                    <a href="https://github.com/Lorenchess" target="_blank" rel="noreferrer" className='px-4'>
+                      <BsGithub size={26} fill={'#131131'} />
+                    </a>
+                    <a href="https://www.facebook.com/ramonmiguel.lorentepupo/" target="_blank" rel="noreferrer" className='px-4'>
+                      <ImFacebook2 size={25} fill={'#131131'} />
+                    </a>
+                    
                 </Col>
             </Row>
             <Row className="row">
                 <Col xm="12" className="text-center">
-                    <p className="footer__copyright">
-                        Built by <a href="#" className="footer__link">Ramon Lorente</a> for his portfolio website <a href="#" className="footer__link">Advanced CSS and Sass</a>.
+                    <p className="footer__copyright mt-4">
+                        Built with ❤ by Ramon Lorente for his portfolio website .
                         Copyright &copy; by Ramon Lorente. 
                     </p>
                 </Col>
