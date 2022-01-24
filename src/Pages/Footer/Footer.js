@@ -8,7 +8,7 @@ import "./Footer.scss";
 
 const Footer = () => {
    return (
-        <Container fluid className="footer-wrapper mx-auto">
+        <Container fluid className="footer-wrapper mx-auto" id="footer">
             <Row className="footer__logo-box">
                <Col xm="12" lg="6">
                

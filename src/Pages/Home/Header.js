@@ -16,7 +16,7 @@ const Header = () => {
   };
 
    return (
-     <Container fluid className="header-wrapper">
+     <Container fluid className="header-wrapper" id="/">
             <Particles
                id="tsparticles"
                init={particlesInit}

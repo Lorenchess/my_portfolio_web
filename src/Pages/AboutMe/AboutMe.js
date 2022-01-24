@@ -8,7 +8,7 @@ import LineSeparator from "../../Shared/LineSeparator";
 const AboutMe = () => {
    return (
       <>
-        <Container className="container-wrapper mt-5 py-3">
+        <Container className="container-wrapper mt-5 py-3" id="about">
           <Row >
             <Col xs="12 mb-5" className="separator-wrapper">        
                 <h1 className="about-heading mx-auto d-block">About me</h1>

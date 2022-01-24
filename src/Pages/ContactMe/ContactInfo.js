@@ -6,7 +6,7 @@ import './ContactMe.scss'
 
 const ContactInfo = () => {
   return (
-  <Container>
+  <Container id="contact">
      <Row>
         <Col>
             <Row>
