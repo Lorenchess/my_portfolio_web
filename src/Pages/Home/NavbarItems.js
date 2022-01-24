@@ -9,29 +9,24 @@ const NavbarItems = () => {
    return (
       <Navbar sticky="top"  collapseOnSelect expand="lg" className="navbar-wrapper" >
          <Container className="nav-container">
-            <LinkContainer to='/'>
+            <Link to='/'>
                <Navbar.Brand>
                  Lorenchess
                </Navbar.Brand>
-            </LinkContainer>
+            </Link>
             
             <Navbar.Toggle aria-controls="responsive-navbar-nav">
               <SiLichess size={30} fill={'#000'} className="nav-icon-toggle"/>
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                <Nav className="ms-auto align-items-center">
-                  <LinkContainer to='/'>
-                  <Nav.Link className='px-4 '>Home</Nav.Link>
-                  </LinkContainer>  
-                  <LinkContainer to='/about'>
-                  <Nav.Link className='px-4 '>About</Nav.Link>
-                  </LinkContainer>  
-                  <LinkContainer to='/projects'>
-                  <Nav.Link className='px-4 '>Projects</Nav.Link>
-                  </LinkContainer>  
-                  <LinkContainer to='/contact'>
-                  <Nav.Link className='px-4 '>Contact</Nav.Link>
-                  </LinkContainer>     
+                  
+                  <Nav.Link className='px-4'><Link smooth={true} to='/' offset={-90}>Home</Link></Nav.Link>
+                  <Nav.Link className='px-4'><Link smooth={true} to='about' offset={-90}>About</Link></Nav.Link>
+                  <Nav.Link className='px-4'><Link smooth={true} to='projects' offset={-90}>Projects</Link></Nav.Link>
+                  <Nav.Link className='px-4'><Link smooth={true} to='contact' offset={-90}>Contact</Link></Nav.Link>
+                    
+                  
                </Nav>
             </Navbar.Collapse>
          </Container>
