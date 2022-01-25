@@ -1,6 +1,4 @@
 import React from 'react'
-//import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import './App.scss';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import ContactMe from './Pages/ContactMe/ContactMe';
 import Footer from './Pages/Footer/Footer';

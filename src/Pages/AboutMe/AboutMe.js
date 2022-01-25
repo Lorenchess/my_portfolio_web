@@ -22,7 +22,7 @@ const AboutMe = () => {
                 <Card.Img variant="top"  src={authorPhoto} className="author-img-wrapper mx-auto d-block mt-5"/>
                 <Card.Body className="mb-3 mx-3 text-break">
                     <Card.Text className="about-text">
-                      My name is <strong>Ramon Lorente</strong>. I am an <strong>international chess (FIDE) master</strong> and graduated from the <strong>Full Stack Web and Mobile Development Bootcamp at
+                      My name is <strong>Ramon Lorente</strong>. I am an <strong>international chess (FIDE) master</strong> graduated from the <strong>Full Stack Web and Mobile Development Bootcamp at
                       Nucamp</strong> . I have a bachelor's degree in Physical Education from Cuba, and I am currently working at Franklin
                       Academy Pembroke Pines in Florida.
                     </Card.Text> 

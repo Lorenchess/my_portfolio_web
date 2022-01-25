@@ -23,11 +23,11 @@
 
 .img-wrapper-1 {
   border: 2px solid $color-text;
-  width: 42rem;
+  width: 29rem;
 }
 .img-wrapper-2 {
   border: 2px solid $color-text;
-  width: 40rem;
+  //width: 40rem;
 }
 .img-wrapper-3 {
   border: 2px solid $color-text;
@@ -40,18 +40,65 @@
 
 .project-card-text {
    font-size: 1.3rem !important;
+   color: $color-text;
 }
 
-.project-btn {
-   background-color: $primary-color;
-   color: #000;
-   font-weight: 600;
-   border: 1.5px solid $color-text;
+// .project-btn {
+//    background-color: $primary-color;
+//    color: $color-text;
+//    font-size: 1.5rem;
+//    font-weight: 600;
+//    border: 1.5px solid $color-text;
+//    justify-content: center;
+//    align-items: center;
+//    text-align: center;
 
-   &:hover {
-      background-color: $primary-light;
-      color: #000;
-      font-weight: 600;
-      border: 1.5px solid $primary-darker;
-   }
+//    &:hover {
+//       background-color: $primary-light;
+//       color: $color-text;
+//       font-weight: 600;
+//       border: 1.5px solid $primary-darker;
+//    }
+// }
+
+.project-btn {
+   min-width: 130px;
+   height: 4rem;
+   font-size: 1.5rem;
+   font-weight: bold;
+   transition: all 0.3s ease;
+   position: relative;
+   display: inline-block;
+   outline: none;
+   border-radius: 5px;
+   z-index: 0;
+   background: $background-color;
+   overflow: hidden;
+   border: 2px solid $color-darker;
+   color: $color-darker;
+ 
+ &:hover {
+   color: #fff;
+   background: $primary-darker;
+   transition-duration: 0.4s;
+ }
+ &:hover:after {
+   width: 100%;
+ }
+ &:after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   transition: all 0.3s ease;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 100%;
+   overflow: hidden;
+   background: $primary-darker
+ }
+ &:active {
+    transform: translateY(3px);
+ }
+
 }

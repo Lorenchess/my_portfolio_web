@@ -1,32 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import "~bootstrap/scss/bootstrap";
-/* 
-MAIN COLOR: #e67700
-MAIN LIGTHER: #f08c00;
-GREY COLOR-TEXT: #343a40
-- Tints:
-#fdf1e6
-#fae4cc
-#f8d6b3
-#f3bb80
-#f08c00
-- Shades: 
-#a15300
-#8a4700
-#733c00
-#5c3000
-#452400
-- Accents:
-- Greys
-#888
-#767676 (lightest grey allowed on #fff)
-#6f6f6f (lightest grey allowed on #fdf2e9)
-#555
-#333
-*/
+
 :root {
-  $primary-color: #e67700;
-  $primary-light: #f08c00;
+  $primary-color: #32d1c9;
+  $primary-light:#adede9;
+  $primary-dark: #269d97;
+  $primary-darker: #176d69;
+  $color-secondary: #87dceb;
 }
 
 html {
@@ -38,7 +18,8 @@ body {
   margin: 0;
   font-family: 'Lora', serif, 'Lobster', cursive !important;
   line-height: 1.5;
-  color: #343a40;
+  color: #131131 !important;
+  background-color: #d5f5f3 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

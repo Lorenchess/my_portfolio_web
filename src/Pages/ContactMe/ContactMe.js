@@ -71,6 +71,11 @@ const ContactMe = () => {
   return (
     <>
       <Container className="contact-wrapper mx-auto">
+          <Row >
+            <Col xs="12 mb-5" className="separator-wrapper">        
+                <h1 className="contact-heading mx-auto d-block">Contact Me</h1>
+            </Col>
+          </Row >
         <Row className="contact-main-row">
           <Col xm="12" lg="6" className="contact-info text-center py-3">
             <ContactInfo />
@@ -88,8 +93,6 @@ const ContactMe = () => {
                     type="text"
                     name="fullName"
                     id="fullName"
-                    //value={fullName}
-                    //onChange={(e) => setFullName(e.target.value)}
                     {...register("fullName", { required: true, minLength: 5, maxLength: 20 })}
                   />
                   <span className="error-message">

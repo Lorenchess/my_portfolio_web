@@ -13,7 +13,13 @@
    }
 
    & h1 {
-      margin-bottom: 1.5rem;
+ 
+   font-size: 35px;
+   color: $background-color;
+   text-align: center;
+   font-weight:600;
+   text-shadow: 1px 1px 2px $primary-color;
+   margin-top: 2rem;
    }
 
 
@@ -36,7 +42,7 @@
    }
 
    .contact-form {
-      background: #f9feff;
+      background: $background-color;
       text-align: center;
       & .success-message {
          font-size: 1.5rem;
@@ -59,7 +65,6 @@
       
          font-size: 1.3rem;
          margin: 10px;
-         border: 1px solid #f9feff;
 
          & label {
             display: block;
