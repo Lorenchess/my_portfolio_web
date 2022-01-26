@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Row, Col, Button } from 'react-bootstrap';
 import { BsLinkedin } from "react-icons/bs";
+import { Link } from "react-scroll";
 import Typical from 'react-typical';
 import resume from '../../Assets/resume.pdf';
 import './Profile.scss';
@@ -45,7 +46,7 @@ const Profile = () => {
                                  1000,
                                  "FIDE Chess Master 🏆",
                                  1000,
-                                 "husband & father 👪",
+                                 "Husband & father 👪",
                                  1000
                                  
                               ]}
@@ -59,7 +60,14 @@ const Profile = () => {
                    
                      <Col className="profile-optins my-3">
                         <Button className="perfil-btn mx-3 " size="lg" > {" "}
-                           Get in touch 
+                           <Link
+                            to="contact"
+                            smooth = {true}
+                            offset={-90}
+                           //  className="perfil-btn mx-3 "
+                           >
+                              Get in touch 
+                           </Link>
                         </Button>{" "} 
                         
                         <a href={resume} download={"Ramon resume.pdf"}>
