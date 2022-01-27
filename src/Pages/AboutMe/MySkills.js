@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { SiJavascript } from "react-icons/si";
 import { mySkillsData } from "../../Shared/skillsData";
 import "./MySkills.scss";
 

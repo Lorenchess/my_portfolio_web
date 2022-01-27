@@ -4,6 +4,7 @@ import ContactInfo from "./ContactInfo";
 import LineSeparator from "../../Shared/LineSeparator";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+import MapLocation from './MapLocation';
 
 import "./ContactMe.scss";
 
@@ -12,7 +13,7 @@ const ContactMe = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [isSending, setIsSending] = useState("Submit");
   const [isDisabled, setIsDisabled] = useState(false);
-  //const [isMessageHide, setIsMessageHide] = useState(false);
+  
 
   //form validation
 
@@ -72,13 +73,17 @@ const ContactMe = () => {
     <>
       <Container className="contact-wrapper mx-auto">
           <Row >
-            <Col xs="12 mb-5" className="separator-wrapper">        
+            <Col xs="12 mb-1" className="separator-wrapper">        
                 <h1 className="contact-heading mx-auto d-block">Contact Me</h1>
             </Col>
           </Row >
         <Row className="contact-main-row">
           <Col xm="12" lg="6" className="contact-info text-center py-3">
             <ContactInfo />
+            {/* map */}
+            {/* <div className="map-container"> */}
+                <MapLocation center = {{lat: 26.005430, lng: -80.279716}} zoom={16}/> 
+            {/* </div> */}
           </Col>
 
           <Col xm="12" lg="6" className="contact-form py-3">

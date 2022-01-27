@@ -4,6 +4,7 @@ import {FaStreetView, FaPhoneAlt, FaEnvelope} from 'react-icons/fa'
 import './ContactMe.scss'
 
 
+
 const ContactInfo = () => {
   return (
   <Container id="contact">
@@ -17,9 +18,9 @@ const ContactInfo = () => {
             <Row>
                <Col>
                   <ul>
-                  <FaStreetView size={15}/> <li>Pembroke Pines, Florida</li>
-                  <FaPhoneAlt size={15}/>   <li>(956) 336-2323</li>
-                  <FaEnvelope size={15}/>    <li>ramon_lorente@yaho.com</li>
+                   <li><FaStreetView size={15}/> Pembroke Pines, Florida</li>
+                     <li><FaPhoneAlt size={15}/> (956) 336-2323</li>
+                     <li> <FaEnvelope size={15}/> ramon_lorente@yaho.com</li>
                   </ul>
                </Col> 
            
