@@ -1,9 +1,11 @@
 import React, {useRef, useEffect} from 'react';
 import "./ContactInfo.scss"
 
+
 const MapLocation = ({center, zoom}) => {
   
   const mapRef = useRef();
+
 
 
   useEffect(() => {

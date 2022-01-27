@@ -80,10 +80,7 @@ const ContactMe = () => {
         <Row className="contact-main-row">
           <Col xm="12" lg="6" className="contact-info text-center py-3">
             <ContactInfo />
-            {/* map */}
-            {/* <div className="map-container"> */}
-                <MapLocation center = {{lat: 26.005430, lng: -80.279716}} zoom={16}/> 
-            {/* </div> */}
+            <MapLocation center = {{lat: 26.005430, lng: -80.279716}} zoom={16}/> 
           </Col>
 
           <Col xm="12" lg="6" className="contact-form py-3">
