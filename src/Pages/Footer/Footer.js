@@ -3,10 +3,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { BsLinkedin } from "react-icons/bs";
 import { ImFacebook2 } from "react-icons/im";
 import { BsGithub } from "react-icons/bs";
+import "aos/dist/aos.css"
 // import { BsLinkedin } from "react-icons/bs";
 import "./Footer.scss";
 
 const Footer = () => {
+
+
    return (
         <Container fluid className="footer-wrapper mx-auto" id="footer">
             <Row className="footer__logo-box">
