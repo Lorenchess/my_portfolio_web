@@ -8,7 +8,7 @@ import "./MySkills.scss";
 const MySkills = () => {
   return (
     <>
-      <Container className="container-wrapper mt-5 py-5">
+      <Container className="skills-container-wrapper py-5">
         <Row>
           <Col xs="12 mb-5" className="separator-wrapper">
             <h1 className="about-heading mx-auto d-block mb-5">My Skills</h1>

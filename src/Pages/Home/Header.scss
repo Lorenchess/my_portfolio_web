@@ -1,4 +1,5 @@
 /*************** HEADER ************/
+@import "../../Shared/MediaQueries/breakpoints.scss";
 
 .header-wrapper {
    position: relative;
@@ -6,16 +7,31 @@
    background-size: cover;
    background-position: center;
    height: 90vh;
+   
+   //media-query-mixing
+   @include xm {
+      background: url(../../Assets/sm-headingBackground.jpg);
+      background-size: cover;
+      background-position: center;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0,0,0,0.70); 
+   
+   }
+
+   // & #tsparticles {
+   //   //media-query-mixing
+   //  @include xm {
+     
+   // }
+   // }
 
 }
 
-.header-wrapper::before {
-   content: "";
-   position: absolute;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   background-color: rgba(0,0,0,0.70); 
-
-}

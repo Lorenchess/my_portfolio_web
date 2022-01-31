@@ -1,4 +1,5 @@
 @import "../../Shared/Color-Variables/color-variables" ;
+@import "../../Shared/MediaQueries/breakpoints.scss";
 
 
 .profile-wrapper {
@@ -16,10 +17,19 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+
+  @include xm {
+    top: 45vh;
+  }
  }
 
  .linkedin-icon {
   transition: all .1s ease-in-out;
+
+  //media-query-mixing
+  @include xm {
+     display: none;
+  }
  
   &:hover {
     transform: scale(1.3); 
@@ -29,31 +39,50 @@
 
  .profile-details-name {
     font-size: 24px;
-    //font-family: "Poppins SemiBold";
+
+    //media-query-mixing
+    @include xm {
+      font-size: 2em;
+    }
+    
   }
 
   .profile-details-role {
     margin: 14px 0 24px 0;
-    
+
+    //media-query-mixing
+    @include xm {
+      margin: 0 0 2em 0;
+    }
   }
 
   .primary-text h1 {
-    font-size: 35px;
-    padding: 20px !important;
+    font-size: 3em;
+    padding: 18px !important;
+
+    //media-query-mixing
+    @include xm {
+      font-size: 2.1em;
+      padding: .5em !important;
+      margin-bottom: .5em;
+    }
+    
   }
 
   .primary-text {
     color: #fff;
   }
 
-  // .highlighted-text {
-  //   color: $primary-color;
-  //   font-size: 25px;
-  // }
   .profile-role-tagline {
     font-size: 19px;
     margin: 10px 0;
     letter-spacing: 1.5px;
+    
+    //media-query-mixing
+    @include xm {
+     font-size: 1.6em;
+     margin: 1em .8em;
+    }
   
   }
 
@@ -68,6 +97,11 @@
    font-weight: 600 !important;
    cursor: pointer;
 
+   //media-query-mixing
+   @include xm {
+     font-size: 1.3em !important;
+   }
+
    &:hover {
     background-color: $primary-color !important;
     color: black !important;
@@ -80,8 +114,11 @@
     font-style: italic;
     font-size: 25px;
     font-weight: 900;
-    //text-decoration: none;
-    //color: $primary-color!important;
+    
+    //media-query-mixing
+    @include xm {
+     font-size: 1.1em;
+    }
 
     & a {
       text-decoration: none;
@@ -108,118 +145,9 @@
       right: 0;
     }
 
-    // & a:visited {
-    //   color: #9e4e03;
-    // }
     
   }
 
 
 
-  // .linkedin-btn:hover {
-  //   transform: scale(1.07);
-  //   transition: 1s ease-out;
-  // }
-
-
-//  .profile-options .highlighted-btn {
-//    margin: 0 0 0 28px;
-//    border-radius: 12px solid white;
-//  }
-//  .profile-options .highlighted-btn:hover {
-//    margin: 0 0 0 28px;
-//    background-color: cornsilk;
-//    color: #111;
-//  }
-//  .profile-picture {
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    box-shadow: 0 1px 0px 0px var(--white);
-//    border-radius: 50%;
-//    height: 380px;
-//    width: 380px;
-//    margin: 0 0px 0 100px;
-//  }
-//  .profile-picture-background {
-//    height: 92%;
-//    width: 92%;
-//    border-radius: 50%;
-//    //background-image: url("../../../assets/Home//profilephoto.jpg");
-//    background-size: cover;
-//    background-repeat: no-repeat;
-//    background-position: center;
-//  }
-//  .profile-picture-background:hover {
-//    transform: scale(1.07);
-//    transition: 1s ease-out;
-//  }
- 
-//  .colz .colz-icon i {
-//    color: white;
-//    padding: 8px;
-//    padding-left: 0px;
-//  }
-//  .colz .cols-icon i:hover {
-//    transform: scale(1.5);
-//  }
- 
-//  /*IPAD PRO RESPONSIVENESS*/
-//  @media only screen and (max-width: 1110px) {
-//    .profile-picture {
-//      margin: 0 0px 0 80px;
-//    }
-//    .profile-details-name {
-//      font-size: 20px;
-//    }
-//    .profile-details-role .primary-text {
-//      font: 12px;
-//    }
-//    .profile-options .btn {
-//      width: 120px;
-//      padding: 11px 0;
-//      z-index: 700;
-//    }
-//  }
-//  @media only screen and (max-width: 910px) {
-//    .profile-picture {
-//      margin: 0 0 0 4px;
-//      height: 320px;
-//      width: 320px;
-//    }
-//  }
-//  @media only screen and (max-width: 810px) {
-//    .profile-picture {
-//      margin: 0 !important;
-//    }
-//    .profile-parent {
-//      flex-direction: column-reverse;
-//      margin: 40px 0 0 0;
-//    }
-//    .profile-options {
-//      display: flex;
-//      justify-content: space-between;
-//    }
-//    .proflie-details {
-//      margin: 25px 0 0;
-//    }
-//    .profile-options .highlighted-btn {
-//      margin: 0 !important;
-//    }
-//    .profile-details-name,
-//    .profile-details-role {
-//      text-align: center;
-//    }
-//  }
- 
-//  @media only screen and (max-width: 375px) {
-//    .profile-picture {
-//      height: 275px;
-//      width: 275px;
-//      margin-top: -90px;
-//    }
-//    .proflie-details {
-//      width: 95%;
-//    }
-//  }
  

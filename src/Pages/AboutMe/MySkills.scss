@@ -1,34 +1,18 @@
 @import "../../Shared/Color-Variables/color-variables" ;
+@import "../../Shared/MediaQueries/breakpoints.scss";
 
+.skills-container-wrapper {
+   margin-top: 5px;
 
+	//media query-mixing
+   @include xm {
+    margin-top: 0 !important;
+	 padding: 0 1em !important;
+   }
 
-.container-wrapper h2 {
-	text-shadow: 1px 1px 2px $primary-color;
+	& h2 {
+		text-shadow: 1px 1px 2px $primary-color;
+	}
 }
 
-.skill-bar {
-	background-color: #d8d8d8;
-	box-shadow: 0 3px 3px -5px rgba(0, 0, 0, 0.603), 0 2px 5px rgba(0, 0, 0, 0.753);
-	border-radius: 20px;
-	position: relative;
-	margin: 15px 0;
-	height: 3rem;
-	width: 300px;
-   font-size: 1.5rem;
-   justify-content: center;
-   align-items: center;
-}
 
-.skill-done {
-	background: linear-gradient(to right, $primary-light, $primary-color);
-	box-shadow: 0 3px 3px -5px rgb(0, 0, 0, 0.603), 0 2px 5px rgb(0, 0, 0, 0.753);
-	border-radius: 20px;
-	color: #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 0;
-	opacity: 0;
-	transition: 1s ease 0.3s;
-}

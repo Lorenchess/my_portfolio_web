@@ -1,4 +1,5 @@
 @import "../../Shared/Color-Variables/color-variables" ;
+@import "../../Shared/MediaQueries/breakpoints.scss";
 
 
 .author-img-wrapper{
@@ -7,6 +8,11 @@
   padding:.3rem;
   border: 2px solid $color-darker;
   text-align: center;
+
+  //media query-mixing
+  @include xm {
+   width: 20em !important;
+ }
 }
 
 .about-heading {
@@ -15,12 +21,22 @@
    text-align: center;
    font-weight:600;
    text-shadow: 1px 1px 2px $primary-color;
+
+   //media query-mixing
+   @include xm {
+    font-size: 2.5em;
+   }
 }
 
 .about-text {
    font-size: 1.8rem;
    margin-top: 2rem;
-   //color: $primary-color-dark; find the color for the text 
+   
+   //media query-mixing
+   @include xm {
+     font-size: 1.2em;
+     margin-top: 1em;
+   }
 }
 
 strong {
@@ -29,31 +45,11 @@ strong {
 
 .about-card {
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+
+   //media query-mixing
+   @include xm {
+     margin-bottom: 3.5em;
+   }
 }
 
 
-
-// .heading-seperator div{
-//    display: flex !important;
-//    align-items: center;
-//    position: relative;
-//    width: 180px;
-//    margin: 10px 0 0;
-// }
-
-// .seperator-line {
-//    width: 100%;
-//    height: 2px!important;
-//    background-color: #1f221f !important;
-//    & div {
-//       display: block;
-//    }
-// }
-
-// .seperator-blob {
-//    height: 10px;
-//    width: 100%;
-//    position: absolute;
-//    display: flex;
-//    justify-content: center;
-// }
