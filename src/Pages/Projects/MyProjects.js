@@ -32,7 +32,7 @@ const MyProjects = () => {
                         <Card.Img variant="top" src={isaGrooming} className="img-wrapper-1 mx-auto d-block"/>
                         <Card.Body>
                            <Card.Title className='project-card-title'>Isa Grooming</Card.Title>
-                           <Card.Text className='project-card-text'>
+                           <Card.Text className='project-card-text isa-info'>
                               Isa grooming is a real world application for a grooming business located in Miami, Florida. 
                            </Card.Text>
                            <Button className='project-btn text-center' onClick={() => setModalGroomingShow(true)}>Case Study</Button>

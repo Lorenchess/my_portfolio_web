@@ -12,7 +12,7 @@ const ContactInfo = () => {
         <Col>
             <Row>
                <Col>
-               <h1><strong>I am always happy to hear from you</strong></h1>
+               <h1 className='greeting-contact'><strong>I am always happy to hear from you</strong></h1>
                </Col> 
             </Row>
             <Row>
