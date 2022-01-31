@@ -48,6 +48,7 @@
   "devDependencies": {
     "install": "^0.13.0",
     "lite-server": "^2.6.1",
+    "mini-css-extract-plugin": "2.4.5",
     "npm": "^8.3.2"
   }
 }
